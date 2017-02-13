@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Album</title>
+	<link rel="stylesheet" href="mine.css">
+	<script type="text/javascript">
+		var album1=["a1.jpg","a2.jpg","a3.jpg","a4.jpg","a5.jpg"];
+		var album2=["b1.jpg","b2.jpg","b3.jpg","b4.jpg","b5.jpg"];
+		var Img;
+		var i=0;j=0;
+		var pick;
+		function pickOne(){
+			pick=1;
+			Img=document.getElementById('show');
+			Img.setAttribute("src",album1[0]);
+		}
+		function pickTwo(){
+			pick=2;
+			Img=document.getElementById('show');
+			Img.setAttribute("src",album2[0]);
+		}
+		function previousimg(){
+			if(pick==1){
+				if(i>=1&&i<5){
+					Img=document.getElementById('show');
+					Img.setAttribute("src",album1[--i]);
+				}
+			}
+			else if(pick==2){
+				if(j>=1&&j<5){
+					Img=document.getElementById('show');
+					Img.setAttribute("src",album2[--j]);
+				}
+			}
+		}
+		function nextimg(){
+			if(pick==1){
+				if(i>=0&&i<4){
+					Img=document.getElementById('show');
+					Img.setAttribute("src",album1[++i]);
+				}
+			}	
+			else if(pick==2){
+				if(j>=0&&j<4){
+					Img=document.getElementById('show');
+					Img.setAttribute("src",album2[++j]);
+				}
+			}			
+		}
+	</script>
+</head>
+<body>
+	<div id="home"><a href="../hw1/index.html"><img src="../hw4/home.jpeg" alt=""></a></div>
+	<div id="title">My Album</div>
+	<div id="text">To see more pictures,<br><b>Click</b> on the album cover!</div>
+	<div id="menu">
+	<table>
+		<tr>
+		<td>
+			<div class="overlay"><img id="cover1" class="cover" src="a1.jpg" alt="album1" onclick=pickOne()></div>
+		</td>
+		<td>Album 1:<br>Life in NSYSU</td>
+		<td>
+			<div class="overlay"><img class="cover" id="cover2" src="b1.jpg" alt="album2" onclick=pickTwo()></div></td>
+		<td>Album 2:<br>Food</td>
+		</tr>
+	</table>
+	</div>
+	<table>
+		<tr><td><input type="image" id="previous" alt="pre" onclick=previousimg() ></td>
+			<td><img src="" id="show" alt=""></td>
+<!-- 			<div id=""></div>-->
+			<td><input type="image" id="next" alt="next" onclick=nextimg()></td>
+		</tr>
+	</table>
+<!--footer-->
+	<footer>web programming homework<br>Copyright reserved. &copy; Design by Lily Cheng. 2015.December</footer>
+</body>
+</html>

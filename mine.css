@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+body{
+	margin: 10px auto;
+	padding: 10px 50px;
+	height: 100%;
+	background-color:  #FBDADE;
+	font-family: 'Dancing Script', cursive;
+}
+li,ul{
+	float: left;
+	margin: 10px;
+	height: 180px;
+	color: gray;
+	background-color: black;
+}
+table{
+	padding-top:16px;
+	width: 100%;
+}
+td{
+	font-size: 28px;
+	width: 250px;
+}
+footer{
+	bottom: 0;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 20px;
+}
+b{
+	color: red;
+}
+#home{
+	position: fixed;
+	bottom: 0px;
+	left: 10px;
+	border-radius: 20px;
+	opacity: 0.9;
+}
+#title{
+	width: 0 auto;
+	height: 35px;
+	padding: 15px 30px;
+	font-size: 35px;
+	background-color: #F99AA7;
+}
+#text{
+	float: left;
+	width: 160px;
+	height: 120px;
+	text-align: left;
+	font-size: 28px;
+	padding: 30px 20px;
+}
+#menu{
+	height: 160px;
+	padding: 10px;
+	width: 0 auto;
+	background-image: url(cameraroll.jpg);
+	margin-left: 200px;
+	padding-left: 150px;
+	overflow: hidden;
+}
+#show{
+	text-align: center;
+	height: 500px;
+	line-height: 500px;
+	margin-bottom: 20px;
+	margin: 30px;
+}
+#previous{
+	float: left;
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #773E46;
+	border-bottom: 25px solid transparent;
+	margin: 30px;
+	background-color: #FBDADE;
+	position: relative;
+	box-shadow: -3px 3px 9px #59010D;
+	border-radius: 3px;
+	opacity: 0.8;
+
+}
+#next{
+	float: right;
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #773E46;
+	border-bottom: 25px solid transparent;
+	margin-left: 10px;
+	margin: 30px;
+	background-color: #FBDADE;
+	position: relative;
+	box-shadow: 3px 3px 9px #59010D;
+	border-radius: 3px;	
+	opacity: 0.8;
+}
+.cover{
+	overflow: hidden;
+	position: relative;
+	height: 100px;
+	float: left;
+	margin: 12px 0;
+	text-align: right;
+	transform-origin:0;
+	transition: width 0.4s linear, height 0.4s linear, transform 0.4s linear;
+}
+.cover:hover{
+	overflow: hidden;
+	position: relative;
+	transform-origin:0;
+	transform: scale(1.2,1.2);
+}
+.overlay{
+	display: block;
+	width: 160px;
+	overflow: hidden;
+	background-color: white;
+	-webkit-transition: opacity 0.4s linear;
+	-moz-transition: opacity 0.4s linear;
+	-o-transition: opacity 0.4s linear;
+	transition: opacity 0.4s linear;
+}
+.overlay:hover{
+	opacity: 0.5;
+}
+
+
+
